@@ -32,12 +32,6 @@ extension Text {
             {[ if lineSpacing ]}
             .lineSpacing({{ lineSpacing.measure }}) 
             {[/]}
-            {[ const textCase = token.value.textCase /]}
-            {[ if (textCase == "Upper") ]}
-            .textCase(.uppercase) 
-            {[ elseif (textCase == "Lower") ]}
-            .textCase(.lowercase) 
-            {[/]}
     }
     {[/]}
     {[/]}

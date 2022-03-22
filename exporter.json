@@ -1,7 +1,7 @@
 {
-    "id": "io.supernova.ios-swiftui",
-    "name": "iOS SwiftUI",
-    "description": "iOS SwiftUI token and style exporter",
+    "id": "io.supernova.ios.chatbooks",
+    "name": "iOS - Chatbooks",
+    "description": "iOS SwiftUI and UIKit token and style exporter for Chatbooks",
     "source_dir": "src",
     "version": "1.2.1",
     "usesBrands": true,
@@ -17,7 +17,7 @@
         "Typography",
         "Radii"
     ],
-    "author": "Vaclav Lustek",
+    "author": "Vaclav Lustek & Jeff Hillman",
     "organization": "Supernova",
     "homepage": "https://supernova.io",
     "config": {

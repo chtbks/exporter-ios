@@ -1,31 +1,24 @@
 {
-    "blueprints": [{
-            "invoke": "borders.pr",
-            "write_to": "Styles/BorderExtension.swift"
-        },
+    "blueprints": [
         {
             "invoke": "colors.pr",
-            "write_to": "Styles/ColorExtension.swift"
+            "write_to": "ColorExtension.swift"
+        },
+        {
+            "invoke": "uicolors.pr",
+            "write_to": "UIColorExtension.swift"
         },
         {
             "invoke": "gradients.pr",
-            "write_to": "Styles/GradientExtension.swift"
-        },
-        {
-            "invoke": "measures.pr",
-            "write_to": "Styles/AppMeasures.swift"
-        },
-        {
-            "invoke": "radius.pr",
-            "write_to": "Styles/RadiusExtension.swift"
-        },
-        {
-            "invoke": "shadows.pr",
-            "write_to": "Styles/ShadowExtension.swift"
+            "write_to": "GradientExtension.swift"
         },
         {
             "invoke": "typography.pr",
-            "write_to": "Styles/FontExtension.swift"
+            "write_to": "FontExtension.swift"
+        },
+        {
+            "invoke": "uitypography.pr",
+            "write_to": "UIFontExtension.swift"
         }
     ]
 }
