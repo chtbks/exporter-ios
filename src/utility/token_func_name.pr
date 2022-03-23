@@ -1,3 +1,1 @@
-{[ if !context.group.isRoot ]}
-{[/]}
 {{ context.token.name.camelcased(true) }}

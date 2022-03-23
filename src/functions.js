@@ -11,3 +11,9 @@
 }
 
 Pulsar.registerFunction("createDocumentationComment", createDocumentationComment)
+
+Pulsar.registerFunction("includeOriginName", function (tokens, valueToInclude) {
+  return tokens.filter(token => {
+    return token.origin.name.toLowerCase().indexOf(valueToInclude.toLowerCase()) >= 0;
+  });
+});

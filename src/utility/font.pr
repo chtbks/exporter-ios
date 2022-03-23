@@ -1,1 +1,1 @@
-Font.custom("{{ context.font.family }}{{ context.font.subfamily }}", size: {{ context.fontSize.measure }})
+Font.custom("{[ inject "rendered-font-family" context context.font /]}", size: {{ context.fontSize.measure }})

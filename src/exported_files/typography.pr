@@ -10,12 +10,13 @@ extension Text {
 
     // {{ group.name }}
     {[/]}
-    {[ for token in tokens ]}
+    {[ const filteredTokens = includeOriginName(tokens, 'mobile') /]}
+    {[ for token in filteredTokens ]}
 
     {[ if (token.description && token.description.count() > 0) ]}
     {{ createDocumentationComment(token.description, "    ") }}
     {[/]}
-    func textStyle{[ inject "token_func_name" context this /]}() -> some View {
+    func {[ inject "token_font_category" context token.value /]}{[ inject "token_func_name" context this /]}() -> some View {
         return self
             .font({[ inject "font" context token.value /]})
             {[ const leterSpacing = token.value.leterSpacing /]}

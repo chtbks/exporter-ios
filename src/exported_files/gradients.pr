@@ -17,7 +17,7 @@ extension Gradient {
     {{ createDocumentationComment(token.description, "        ") }}
     {[/]}
     public static let {[ inject "token_name" context this /]} = LinearGradient(
-        gradient: Gradient(stops: [
+        gradient: Gradient(stops: [
             {[ for stop in token.value.stops ]}
             Gradient.Stop(color: {[ inject "color" context stop.color /]}, location: {{ stop.position }}),
             {[/]}

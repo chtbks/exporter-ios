@@ -12,6 +12,7 @@ Injectable blueprint that renders font family names with handling for janky Circ
 
 *}
 {[ if (context.family === "Inter") ]}
-"{{ context.family }}"
+{{ context.family }}-{{ context.subfamily }}
 {[ else ]}
-"CircularXX-{{ context.subfamily }}"{[/]}
+CircularXX-{{ context.subfamily }}
+{[/]}
